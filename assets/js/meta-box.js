@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		// - the YYYY-MM-DD value of #nprone-expiry-datepicker
 		// - the HH:MM value of #nprone-expiry-time
 		// and output a string in the format Apr 1, 2020 @ 09:01 / Nov 1, 2018 @ 23:59
-		var pickedyear = new Date($( '#nprone-expiry-datepicker' ).value());
-		var timeinput 	= $( '#nprone-expiry-time' ).value().split(":");
+		var pickedyear = new Date($( '#nprone-expiry-datepicker' ).val());
+		var timeinput 	= $( '#nprone-expiry-time' ).val().split(":");
 		var pickedtime 	= new Date();
 		pickedtime.setHours(timeinput[0]);
 		pickedtime.setMinutes(timeinput[1]);
